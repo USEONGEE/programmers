@@ -1,0 +1,1 @@
+console.log(require("fs").readFileSync('/dev/stdin').toString().trim().split('\n').slice(1).sort((a, b)=> +a - (+b)).map(item=>+item).join('\n'))
